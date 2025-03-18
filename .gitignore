@@ -1,0 +1,50 @@
+.DS_Store
+logs/
+reports/output/*
+reports/stocks/
+!reports/output/.gitkeep
+results/
+venv/
+stock_analysis/
+__pycache__/
+*.pyc
+.env
+.idea/
+.cursor/
+.venv/
+scripts/.venv/
+*.log
+*.csv
+*.xlsx
+*.json
+*.pkl
+*.h5
+*.model
+*.bak
+*.swp
+*.swo
+*~
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.ipynb_checkpoints/
+dist/
+build/
+*.egg-info/
+# 临时创意文件
+project_management/ideaguide.md
+# 版本命名指南（仅供内部使用）
+project_management/version_naming_guide.md
+# 项目特定文件
+project_management/reference/ideaguide.md
+# 日报和周报文件
+project_management/actuals/reports/daily/*.md
+project_management/actuals/reports/weekly/*.md
+# 保留目录结构
+!project_management/actuals/reports/daily/.gitkeep
+!project_management/actuals/reports/weekly/.gitkeep
+# Configuration files
+config.toml

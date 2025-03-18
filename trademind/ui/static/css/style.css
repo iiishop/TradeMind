@@ -1,0 +1,243 @@
+/* TradeMind Lite - 基础样式表 */
+
+/* 基础布局和结构样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    padding: 15px 20px;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* 股票卡片样式 - 从原HTML报告迁移 */
+.stock-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.stock-card:hover {
+    transform: translateY(-5px);
+}
+
+.stock-card .card-header {
+    padding: 15px;
+    font-weight: 600;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.stock-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.stock-name {
+    font-size: 16px;
+    font-weight: 600;
+    max-width: 65%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.stock-price {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.price-change {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.positive {
+    color: #28a745;
+}
+
+.negative {
+    color: #dc3545;
+}
+
+.neutral {
+    color: #ffc107;
+}
+
+/* 指标块样式 */
+.indicator-section {
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.pattern-section {
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.advice-section {
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.backtest-section {
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* 按钮样式 */
+.btn {
+    transition: all 0.3s ease;
+}
+
+/* 说明书样式 */
+.manual-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.manual-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+
+.manual-section {
+    margin-bottom: 15px;
+}
+
+.manual-section-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* 风险提示横幅 */
+.risk-banner {
+    margin-top: 30px;
+    padding: 18px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.risk-banner h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.risk-banner p {
+    margin-bottom: 8px;
+}
+
+/* 页脚和水印 */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.watermark {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.header-banner {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.header-banner h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header-banner p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+.spinner-border {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* 主题切换按钮样式 */
+#theme-toggle {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+}
+
+#theme-toggle i {
+    font-size: 1rem;
+} 
